@@ -1,0 +1,285 @@
+body {
+    background-color: rgba(214, 207, 207, 0.822);
+}
+
+/*HEADER START*/
+#first-jumbo {
+    padding: 40px 10px 10px 2px;
+    margin-bottom: 0px;
+}
+#first-container {
+    display: flex;
+    align-items: center;
+}
+/*Portrait phones*/
+@media (max-width: 480px) {
+    #first-container .first-link a {
+        font-size: 18px !important;
+    }
+}
+@media (max-width: 360px) {
+    #first-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #first-container .first-link a {
+        font-size: 16px;
+    }
+}
+.first-link {
+    flex: 1;
+}
+.first-link a {
+    text-decoration: none;
+    color: rgb(57, 160, 57);
+    font-size: 30px;
+    font-weight: bold;
+}
+.header-flex-items {
+    display: flex;
+}
+.login-div {
+    margin-left: 20px;
+}
+
+/*text dissapears on screens with 880px or lower width*/
+@media (max-width: 880px) {
+    .header-flex-items > .text-div {
+        display: none;
+    }
+}
+/*HEADER END*/
+
+/*START OF NAV*/
+nav a {
+    color: black;
+}
+nav a:hover {
+    background-color: rgb(43, 112, 43);
+    color: white;
+}
+/*right navbar icons stacks vertically on screens with 700px or lower width*/
+@media (max-width: 700px) {
+    .navbar #right-nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*right navbar icons displays horizontally on screens with 575px or lower width*/
+@media (max-width: 575px) {
+    .navbar #right-nav {
+        display: flex;
+        flex-direction: row;
+    }
+    #right-nav .nav-item {
+        padding: 20px;
+    }
+}
+@media (max-width: 750px) {
+    nav #left-nav #homenav a {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    #left-nav a {
+        padding: 2px;
+    }
+}
+@media (max-width: 576px) {
+    nav #left-nav #homenav a {
+        padding-left: 2px;
+        margin-left: 2px;
+    }
+    #left-nav a {
+        padding: 5px;
+    }
+}
+/*END OF NAV*/
+
+#announceFeatured, #battleFeatured {
+    margin-top: 30px;
+    display: flex;
+}
+@media (max-width: 780px) {
+    #announceFeatured, #battleFeatured {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #announceDiv, #battleDiv {
+        max-width: 470px;
+    }
+    #announceDiv {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 600px) {
+    #announceFeatured, #secondcontainer {
+        padding: 0px;
+        margin: 0px;
+    }
+}
+@media (max-width: 360px) {
+    .announceBattle h2 {
+        font-size: 20px;
+    }
+}
+.announceBattle, .featuredDiv {
+    background-color: white;
+    margin: 10px;
+}
+.secAnnounceBattle, .featured {
+    background-color: rgb(57, 160, 57);
+    border: 1px solid rgb(57, 160, 57);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/*announceBattle start*/
+.announceBattle > p {
+    border-bottom: 1px solid black;
+}
+.announceBattle p:last-child {
+    border: none;
+}
+.announceBattle a {
+    text-decoration: none;
+    color: black;
+}
+.announceBattle h4 {
+    padding: 50px 10px 1px 10px;
+}
+.announceBattle h4 a:hover {
+    color: rgb(57, 160, 57);
+}
+.announceBattle .secAnnounceBattle h2 {
+    padding: 10px;
+}
+.announceBattle h4, p {
+    padding: 20px 10px 0px 10px;
+}
+.announceBattle {
+    max-width: 60%;
+    border-radius: 10px !important;
+}
+/*announceBattle end*/
+
+/*featuredDiv start*/
+.featuredDiv, .featuredThirdDiv {
+    border-radius: 10px !important;
+}
+.featuredDiv a {
+    text-decoration: none;
+    color: black;
+}
+.featuredDiv .featured, h4, p {
+    padding: 10px;
+}
+.featuredDiv h4 a:hover {
+    color: rgb(57, 160, 57);
+}
+.featuredThirdDiv h4 a:hover {
+    color: rgb(57, 160, 57);
+}
+.featuredThirdDiv {
+    background-color: white;
+    margin: 10px;
+    height: 450px;
+}
+.featuredThirdDiv a {
+    text-decoration: none;
+    color: black;
+}
+.featuredThirdDiv .featured, h4, p {
+    padding: 10px;
+}
+@media (max-width: 1199px) {
+    .featured h2 {
+        font-size: 21px;
+    }
+}
+@media (max-width: 360px) {
+    .featured h2 {
+        font-size: 20px;
+    }
+}
+/*featuredDiv end*/
+
+/*footer start*/
+#footer {
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+#firstFooter {
+    display: flex;
+}
+@media (max-width: 586px) {
+    #firstFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 365px) {
+    #firstFooter a {
+        font-size: 26px;
+    }
+}
+footer ul li {
+    list-style-type: none;
+    padding: 5px;
+}
+#footer a {
+    color: black;
+}
+#footer a:hover {
+    color: rgb(43, 112, 43);
+}
+#footerUl, #footerLinks {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 600px) {
+    #footerLinks {
+        display: flex;
+        justify-content: center;
+    }
+    .fa-facebook-square {
+        color: royalblue;
+    }
+    .fa-twitter {
+        color: rgb(66, 120, 221);
+    }
+    .fa-instagram {
+        color: red;
+    }
+    .fa-youtube {
+        color: red;
+    }
+}
+#footerLinks {
+    padding-left: 0px;
+    flex-wrap: wrap;
+}
+#footerLinks a {
+    text-decoration: none;
+    padding: 5px;
+}
+#thirdFooter {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 750px) {
+    #thirdFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 470px) {
+    #thirdFooter div:last-child {
+        font-size: 10px;
+    }
+}
+/*footer end*/

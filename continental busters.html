@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="continentalbusters.css">
+    <title>Continental Busters</title>
+</head>
+<body>
+    <!--Header-->
+    <div class="jumbotron jumbotron-fluid" id="first-jumbo">
+        <div class="container-fluid" id="first-container">
+            <div class="first-link"><a href="#continentalbusters"><span class="fas fa-globe-africa" style="font-size: 30px;"></span>Continental Busters!</a></div>
+            <div class="header-flex-items">
+                <div class="text-div">THE CONTINENT'S LARGEST ANIME DEBATING FORUM</div>
+                <div class="login-div">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#staticBackdrop">LOG IN</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Login Here to get full access to CB</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Log In form-->
+                                    <form action="">
+                                        <div class="form-group">
+                                            <label for="InputEmail">Email address</label>
+                                            <input type="email" class="form-control" id="InputEmail" name="email" aria-describedby="emailHelp">
+                                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="InputPassword">Password</label>
+                                            <input type="password" class="form-control" id="InputPassword" name="password">
+                                        </div>
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="Check">
+                                            <label class="form-check-label" for="Check">Check me out</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-light sticky-top">
+      
+        <!-- Toggler/collapsible Button -->
+        <button class="navbar-toggler bg-success" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" title="Click here to display/collapse navigation bar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <!--Left nav navbar links-->
+            <ul class="navbar-nav" id="left-nav">
+                <li class="nav-item" id="homenav" title="Home">
+                    <a class="nav-link" href="#continentalbusters"><span class="fas fa-home"></span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#manga" id="navbardrop" data-toggle="dropdown">Manga</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Vs Battles</a>
+                        <a class="dropdown-item" href="#">Discussion</a>
+                        <a class="dropdown-item" href="#">Fanarts</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#anime" id="navbardrop" data-toggle="dropdown">Anime</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Vs Battles</a>
+                        <a class="dropdown-item" href="#">Discussion</a>
+                        <a class="dropdown-item" href="#">Fanarts</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#webtoon" id="navbardrop" data-toggle="dropdown">Webtoon</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Vs Battles</a>
+                        <a class="dropdown-item" href="#">Fastpass Discussion</a>
+                        <a class="dropdown-item" href="#">Chapter Discussion</a>
+                        <a class="dropdown-item" href="#">Fanarts</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#marvel&dc" id="navbardrop" data-toggle="dropdown">Marvel & DC Comics</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Vs Battles</a>
+                        <a class="dropdown-item" href="#">Marvel Discussion</a>
+                        <a class="dropdown-item" href="#">DC Discussion</a>
+                        <a class="dropdown-item" href="#">Fanarts</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#others" id="navbardrop" data-toggle="dropdown">Others</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Manhwa Discussion</a>
+                        <a class="dropdown-item" href="#">Manhua Discussion</a>
+                        <a class="dropdown-item" href="#">Novels</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      
+        <!-- right nav Navbar links -->
+        <div class="justify-content-end">
+            <ul class="navbar-nav" id="right-nav">
+                <li class="nav-item" title="Profile">
+                    <a class="nav-link" href="#profile"><span class="fas fa-user"></span></a>
+                </li>
+                <li class="nav-item" title="Notifications">
+                    <a class="nav-link" href="#notifications"><span class="fas fa-bell"></span></a>
+                </li>
+                <li class="nav-item" title="Messages">
+                    <a class="nav-link" href="#messages"><span class="fas fa-comments"></span></a>
+                </li>
+                <li class="nav-item" title="Friends">
+                    <a class="nav-link" href="#friends"><span class="fas fa-users"></span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Section-->
+    <div class="container" id="secondcontainer">
+        <div id="announceFeatured">
+            <div id="announceDiv" class="announceBattle">
+                <div id="siteAnnouncements" class="secAnnounceBattle"><h2>Site Announcements</h2></div>
+                <h4><a href="#sitenews">Site News</a></h4>
+                <p>An area for site announcements and news.</p>
+                <h4><a href="#sitehelp">Site Help</a></h4>
+                <p>An area where users can ask for help with the site or find guides on how to use certain features.</p>
+            </div>
+            <div class="featuredDiv">
+                <div class="featured"><h2>Webtoon of the Month</h2></div>
+                <h4><a href="towerofgod">Tower of God</a></h4>
+                <a href="#kaminotou"><img class="img-fluid" src="https://raw.githubusercontent.com/TunjiDev/html-css/main/kami%20no%20tou.jpeg" alt="kami no tou" width="400" height="400"></a>
+                <p>Learn more about the amazing world of Tower of God.</p>
+            </div>
+        </div>
+        <div id="battleFeatured">
+            <div id="battleDiv" class="announceBattle">
+                <div id="battleGrounds" class="secAnnounceBattle"><h2>Battlegrounds</h2></div>
+                <h4><a href="#vsbattles">VS Battles</a></h4>
+                <p>Visit here for all your VS battles debating needs.</p>
+                <h4><a href="#facts&feats">Facts and Feats</a></h4>
+                <p>A section dedicated to the showcasing of manga/anime/webtoon feats. Respects threads are also welcome.</p>
+            </div>
+            <div class="featuredDiv">
+                <div class="featured"><h2>Anime of the Month</h2></div>
+                <h4><a href="#jujutsukaisen">Jujutsu Kaisen</a></h4>
+                <a href="#jujutsu kaisen"><img class="img-fluid" src="https://raw.githubusercontent.com/TunjiDev/html-css/main/jujutsu%20kaisen.jpg" alt="jujutsu kaisen" width="400" height="400"></a>
+                <p>Let watch this amazingly awesome anime together!</p>
+            </div>
+        </div>
+        <div id="battleFeatured">
+            <div id="battleDiv" class="announceBattle">
+                <div id="battleGrounds" class="secAnnounceBattle"><h2>Site Discussions</h2></div>
+                <h4><a href="#general discussion">General Discussion</a></h4>
+                <p>A place to talk about anything anime or manga related, or typically what doesn't belong in the other sections.</p>
+                <h4><a href="#animediscussion">Anime Discussion</a></h4>
+                <p>A place where you can discuss all the latest anime related news.</p>
+                <h4><a href="#mangadiscussion">Manga Discussion</a></h4>
+                <p>A place where you can discuss all the latest manga related news.</p>
+                <h4><a href="#webtoonmanhwamanhua">Webtoon/Manhwa/Manhua Discussion</a></h4>
+                <p>A place where you can discuss all the latest webtoon/manhwa/manhua related news.</p>
+                <h4><a href="#cab">Challenge a Buster!(CAB)</a></h4>
+                <p>Two or more users(busters) will go against each other in a debate. May the better buster win!</p>
+            </div>
+            <div class="featuredThirdDiv">
+                <div class="featured"><h2>Manga of the Month</h2></div>
+                <h4><a href="#onepiece">One Piece</a></h4>
+                <a href="#one piece"><img class="img-fluid" src="https://raw.githubusercontent.com/TunjiDev/html-css/main/One%20piece.jpg" alt="one piece" width="400" height="400"></a>
+                <p>Let's read this amazingly awesome manga together!</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="footer">
+        <footer>
+            <div id="firstFooter">
+                <div class="first-link"><a href="#continentalbusters"><span class="fas fa-globe-africa" style="font-size: 30px;"></span>Continental Busters!</a></div>
+                <div id="footerDiv">
+                    <ul id="footerUl">
+                        <li><a href="https://web.facebook.com/adetunji.igbatayo" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="https://twitter.com/El_directo_" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#instagram.com/continentalbusters"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#youtube.com/continentalbusters"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="secondFooter">
+                <ul id="footerLinks">
+                    <li class="partnerships"><a href="#partnerships">Partnerships</a></li>
+                    <li><a href="#api">API</a></li>
+                    <li><a href="#termsofuse">Terms of Use</a></li>
+                    <li><a href="#privacypolicy">Privacy Policy</a></li>
+                    <li><a href="#cookiesettings">Cookie Settings</a></li>
+                    <li><a href="#help">Help</a></li>
+                    <li><a href="careers">Careers</a></li>
+                </ul>
+            </div>
+            <div id="thirdFooter">
+                <div><a>Do not sell my information</a></div>
+                <div>CONTINENT BUSTERS, BLAH BLAH. ALL RIGHTS RESERVED</div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
